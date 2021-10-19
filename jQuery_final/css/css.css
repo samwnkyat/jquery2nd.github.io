@@ -1,0 +1,281 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.wrap{
+  margin:0 auto;
+  width:1000px;
+}
+.header{
+  background:#f2f2f2;
+  margin-top:10px;
+  padding:10px;
+}
+.header ul{
+  justify-content:flex-end;
+  display:flex;
+}
+.header li a{
+  text-decoration:none;
+  font-weight:bold;
+}
+.header li a:hover{
+  color:red;
+  font-size:18px;
+}
+.header li img{
+  margin-right:5px;
+  padding-left:10px;
+}
+.facebook{
+  border-right:2px solid #cccccc;
+  padding-right:8px;
+}
+.logo h1 a{
+  background-image:url(https://img.onl/P5Xy2Z);
+  width:174px;
+  height:36px;
+  display:block;
+  text-indent:101%;
+  overflow:hidden;
+  white-space:nowrap;
+  margin:20px auto 20px 20px;
+
+}
+/* 下拉式選單 */
+.list{
+  display:flex;
+  justify-content:space-between;
+}
+.menu{
+  margin-top:15px;
+  display:flex;
+  justify-content:space-between;
+}
+.menu a{
+  display:block;
+  padding: 12px 20px;
+  text-decoration:none;
+  color:#12b59f;
+
+  background-image:linear-gradient(#00cc90,#00cc90);
+  background-position:left bottom;
+  background-size:0 4px;
+  background-repeat:no-repeat;
+  transition:background-size 0.18s linear;
+}
+.menu a:hover{
+  background-size:100% 4px;
+}
+.menu a:active{
+  background:#00cc90;
+}
+.menu .dropdown-list{
+  display:none;
+  position:absolute;
+  background:white;
+  text-align:center;
+}
+.dropdown-list{
+  flex-direction:column;
+  z-index:3;
+}
+.dropdown-list li{
+  outline:1px double black;
+}
+/* banner swiper */
+.banner {
+  position: relative;
+}
+
+.banner h2 {
+  width:960px;
+  line-height: 44px;
+  color: #fff;
+  padding: 40px 20px;
+  font-size:38px;
+  background: rgba(0,0,0,0.3);
+  position: absolute;
+  top: 25%;
+  z-index: 2;
+}
+.container {
+  max-width: 100%;
+}
+.lightboxOverlay{
+  background:yellow;
+}
+.course{
+  top:20px;
+  position:relative;
+  display:flex;
+}
+.course-item h2{
+  text-align:center;
+  font-size:30px;
+  margin:20px 0 10px 0px;
+  font-weight:bold;
+}
+.course-item{
+  width:333px;
+  box-shadow:0 5px 5px 0 #D6D6D6;
+  text-align: center ;
+}
+.course-item p{
+  margin:20px;
+  letter-spacing:3px;
+  line-height:21px;
+}
+.course-item li{
+  letter-spacing:3px;
+  padding-left:15px;
+  line-height:21px;;
+}
+.course-image{
+  width: 600px;
+}
+.table{
+  position:relative;
+  top: 45px;
+}
+.difference{
+  width:1000px;
+  margin:0 auto;
+}
+h3{
+  text-align:center;
+  font-size:30px;
+  margin:20px;
+  font-weight:bold;
+}
+.difference th,.difference td{
+  text-align:center;
+  border-top:1px solid #E2E2E2;
+  border-bottom:1px solid #e2e2e2;
+  padding:10px 80px 10px 30px;
+  text-align:left;
+}
+.difference th{
+  background:#f6f6f8;
+  color:black;
+  font-weight:bold;
+}
+.difference .point{
+  color:#5fa398;
+}
+.difference tr:hover{
+  background:#e2e2e2;
+}
+.contact-us{
+  padding-bottom: 100px;
+  background:linear-gradient(#005043 ,#007c67);
+  margin: 50px auto 20px auto;
+}
+.input{
+  display:flex;
+  
+}
+.contact-us h4{
+  font-size: 25px;
+  color: white;
+  padding:40px 0 20px 0;
+  text-align: center;
+  line-height: 35px;
+}
+.contact-us ul{
+  color: white;
+  margin-left:30px;
+  padding:15px;
+}
+.contact-us li{
+  margin-bottom: 8px;
+  display: block;
+  line-height:20px;
+}
+.btn{
+  margin-top: 20px;
+  padding:7px 17px;
+  float:right;
+  margin-right: 20px;
+  background:#00cc99;
+  color:white;  
+  border-radius:3px;
+}
+
+.btn:hover{
+  cursor: pointer;
+  color:#FFFFFF;
+  background: #000;
+}
+.contact-us textarea{
+    margin-left: 20px;
+    margin-right:20px;
+    display:flex;
+    width: 460px;
+    height: 250px;
+    border-radius:3px;
+}
+.footer{
+  margin-bottom:30px;
+  display:flex;
+  justify-content:space-between;
+}
+
+.footer li a{
+   text-decoration:none;
+   color:#e965a2;
+   line-height:20px;
+}
+.footer li a:hover{
+  font-weight:bold;
+  color:black;
+}
+.top{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
